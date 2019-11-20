@@ -1,0 +1,14 @@
+.col-status-header,.col-estado-header{
+  width: 150px;
+}
+
+.col-status-content,.col-estado-content{
+  text-align: center;
+}
+.col-status-content a{
+  color: rgb(29, 29, 31);
+}
+.col-status-content a:hover{
+  text-decoration: underline;
+  color: rgb(71, 71, 71);
+}

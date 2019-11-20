@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="ui-g">
+    <div class="ui-g-12">
+      <h1>Pessoas</h1>
+    </div>
+    <div class="ui-g-12 ui-fluid">
+      <label for="descricao">Nome </label>
+      <input type="text" pInputText>
+    </div>
+    <div class="ui-g-12">
+      <button pButton type="button" label="Pesquisar"></button>
+    </div>
+  </div>
+  <div class="ui-g">
+    <div class="ui-g-12">
+      <app-pessoa-grid [pessoas]="pessoas" ></app-pessoa-grid>
+    </div>
+    <div class="ui-g-12">
+      <a pButton label="Novo Lançamento"></a>
+    </div>
+  </div>
+</div>

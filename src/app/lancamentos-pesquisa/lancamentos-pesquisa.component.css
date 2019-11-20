@@ -1,0 +1,6 @@
+.col-valor-header,.col-data-header{
+    width: 150px;
+}
+.valor-content, .data-content{
+    text-align: center;
+}

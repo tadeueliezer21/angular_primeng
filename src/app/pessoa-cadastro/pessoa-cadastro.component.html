@@ -1,0 +1,54 @@
+<div class="container">
+    <form autocomplete="off" #formPessoa="ngForm" (ngSubmit)="salvar(formPessoa)">
+        <div class="ui-g-12">
+            <h1>Nova Pessoa</h1>
+        </div>
+        <div class="ui-g-12 ui-fluid">
+            <label>Nome</label>
+            <input pInputText required minlength="5" name="nome" ngModel #nome="ngModel">
+            <app-message [control]="nome" error="required" text="Nome é obrigatório"></app-message>
+            <app-message [control]="nome" error="minlength"
+                text="Mínimo de {{ nome.errors?.minlength?.requiredLength }} caracteres"></app-message>
+        </div>
+        <div class="ui-g-12 ui-md-9 ui-fluid">
+            <label>Logradouro</label>
+            <input pInputText required name="logradouro" ngModel #logradouro="ngModel">
+            <app-message [control]="logradouro" error="required" text="Logradouro é obrigatório"></app-message>
+
+        </div>
+        <div class="ui-g-12 ui-md-3 ui-fluid">
+            <label>Número</label>
+            <input pInputText required name="numero" ngModel #numero="ngModel">
+            <app-message [control]="numero" error="required" text="Número é obrigatório"></app-message>
+        </div>
+        <div class="ui-g-12 ui-md-4 ui-fluid">
+            <label>Complemento</label>
+            <input pInputText>
+        </div>
+        <div class="ui-g-12 ui-md-4 ui-fluid">
+            <label>Bairro</label>
+            <input pInputText required name="bairro" ngModel #bairro="ngModel">
+            <app-message [control]="bairro" error="required" text="Bairro é obrigatório"></app-message>
+        </div>
+        <div class="ui-g-12 ui-md-4 ui-fluid">
+            <label>CEP</label>
+            <p-inputMask mask="99.999-999" required name="cep" ngModel #cep="ngModel"></p-inputMask>
+            <app-message [control]="cep" error="required" text="CEP é obrigatório"></app-message>
+        </div>
+        <div class="ui-g-12 ui-md-6 ui-fluid">
+            <label>Cidade</label>
+            <input pInputText required name="cidade" ngModel #cidade="ngModel">
+            <app-message [control]="cidade" error="required" text="Cidade é obrigatório"></app-message>
+        </div>
+        <div class="ui-g-12 ui-md-6 ui-fluid">
+            <label>Estado</label>
+            <input pInputText required name="estado" ngModel #estado="ngModel">
+            <app-message [control]="estado" error="required" text="Estado é obrigatório"></app-message>
+        </div>
+        <div class="ui-g-12 acoes-button">
+            <button pButton label="Salvar" [disabled]="!formPessoa.valid"></button>
+            <button pButton label="Novo"></button>
+            <a href="javascript:;">Voltar para a pesquisa</a>
+        </div>
+    </form>
+</div>

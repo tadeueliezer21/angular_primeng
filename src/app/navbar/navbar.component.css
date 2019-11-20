@@ -1,0 +1,41 @@
+.navbar {
+  background: #1e94d2;
+  padding: 15px;
+}
+
+.navbar .navbar-toggle {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.navbar-menu {
+  margin: 0;
+  background-color: #539ff7;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 250px;
+  z-index: 9998;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar-user {
+  text-align: center;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  padding: 31px 0 31px 0;
+  border-bottom: 1px #ccc solid;
+  margin-bottom: 15px;
+}
+
+.navbar-menu .navbar-item a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.navbar-menu .navbar-item {
+  padding: 15px;
+}

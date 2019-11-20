@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2b2b2b;
+  margin: 0
+}
+
+label {
+  font-weight: 700
+}
+
+@media (min-width:1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto
+  }
+}
+.col-opcoes-header{
+  width: 100px;
+}
+.col-acoes button{
+  margin-left: 9px!important;
+}
+.acoes-button button{
+  margin-right: 5px!important;
+}
+
