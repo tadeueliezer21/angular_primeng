@@ -5,8 +5,9 @@ import { Component, Input } from '@angular/core';
   templateUrl: './pessoa-grid.component.html',
   styleUrls: ['./pessoa-grid.component.css']
 })
-export class PessoaGridComponent {
 
+export class PessoaGridComponent{
+  
   @Input() pessoas = [];
 
 }
